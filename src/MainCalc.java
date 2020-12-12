@@ -11,6 +11,9 @@ public class MainCalc {
             int b = RussanNumerals.rusNumeral(RussanNumerals.helper(numerals[2]));
             try {
                 int result = Calculator.calc(numerals, a, b);
+                if(result == 0){
+                    System.out.println(RomanNumerals.romanCase(result));
+                }
                 System.out.println(RomanNumerals.romanNumeral(result));
                 if (result < 0) {
                     throw new Exception("Римляне не использовали отрицательных чисел!");

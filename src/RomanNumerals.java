@@ -5,6 +5,9 @@ public class RomanNumerals {
     public static String romanCase(int a) {
         String numeral = "";
         switch (a) {
+            case 0:
+                numeral = "N";
+                break;
             case 1:
                 numeral = "I";
                 break;
